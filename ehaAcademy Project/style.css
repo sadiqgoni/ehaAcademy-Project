@@ -1,0 +1,185 @@
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  opacity: 0;  
+  transform: translateY(100px);
+  transition: all .5s ease
+}
+    
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+body {
+  color:black;
+  text-align: center;
+  padding:10px;
+  font-size: 18px;
+  font-family: Open sans light;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+#page {
+  margin: 60px;
+}
+
+#bio-intro {
+  display:flex;
+  background: #ffffff;
+  width: 100.%;
+  padding: 2px 2px 8px 4px;
+  margin: 0 auto;
+  border-bottom: 2px solid#ddd5d5;  
+}
+
+#img-container, #bio-info, #bio-contact {
+  display: inline-block;
+  width: 33%
+}
+
+#img-container img {
+  display: flex;
+  border-radius: 100%;
+  max-width: 60px;
+  border: 1px solid;
+}
+
+#bio-contact {
+  font-size: 13px;
+  float:right;
+  margin-top: 60px;
+  text-align: right;
+  margin-left: 50px;
+}
+
+a {
+  color:#0090FC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0e0d0d;
+}
+
+#bio-info {
+  display: flex;
+  font-size:2em;
+}
+
+.content {
+  background-color: white;
+  padding-bottom: 40px;
+  border-bottom: 2px solid#e0dbdb;
+  padding-top: 40px;
+  font-family: Open sans light;
+  border-bottom: 2px solid#e0dbdb;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.sub-content {
+  color:#00aeff;
+  font-weight: 600;
+  font-size: 17px;
+  width:100px;
+  text-align:left; 
+}
+
+#skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left:50px;
+}
+
+.box{
+  border-bottom: 2px solid#e0dbdb;
+  background-color: white;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.edu{
+  display: flex;
+  color:#00aeff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.details{
+  margin-right: 10px;
+}
+
+.course{
+  font-weight: 600;
+}
+
+.school{
+  font-size: 15px;
+}
+
+.region{
+  color: rgb(170, 170, 170);
+  font-size: 15px;
+}
+
+.year{
+  text-align: right;
+  font-weight: 570;
+  font-size: 13px;
+  line-height: 40px;
+  color: rgb(170, 170, 170);
+}
+
+#list{
+  line-height: 20px;
+  font-size: 15px;
+}
+
+ul{
+  list-style: none;
+}
+
+li:before{
+  content: "-";
+}
+
+@keyframes fadein {
+  from {
+        opacity:0;
+    }
+  to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+        opacity:0;
+    }
+  to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+        opacity:0;
+    }
+  to {
+        opacity:1;
+    }
+}

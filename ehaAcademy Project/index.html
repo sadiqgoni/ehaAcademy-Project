@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+<div id = "page">
+  <div id="bio-intro">
+    <div id="img-container">
+        <img src = "my picture.jpg" alt = "My Avatar">
+    </div>
+    <div id="bio-info">
+        <p><strong>SADIQ</strong> GONI</p>
+    </div>
+    <div id="bio-contact">
+        <a href="tel:09069268408" target="_blank">+2349069268408</a><br>
+        <a href="mailto:sadiqgoni13@gmail.com" target="_blank">sadiqgoni13@gmail.com</a><br>
+        <a href="https://github.com/sadiqgoni?tab=projects" target="_blank">sadiqgoni.github.io</a>
+    </div>
+  </div>
+
+<table class = "content">
+  <tbody>
+    <tr>
+      <td class ="sub-content"><strong>Intro</strong></td>
+      <td>Hi, I'm a passionate software & web developer<br>I've practiced & worked on various projects
+        <br>I love people, art & music during my leisure time i watch K-Series</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class = "content">
+  <tbody>
+    <tr>
+      <td class ="sub-content"><strong>Interests</strong></td>
+      <td>Android Dev | Frontend | Design | Networking</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class = "content">
+  <tbody>
+    <tr>
+      <td class ="sub-content"><strong>Skills</strong></td>
+      <td id = "skills">
+        <figure>
+          <img src = "html logo.jpg" alt = "html logo" width = "50px" height = "70px">
+          <figcaption>HTML 5</figcaption>
+        </figure>
+   
+        <figure>
+         <img src = "css logo.jpg" alt = "css logo" width = "70px" height = "70px">
+         <figcaption>CSS 3</figcaption>
+       </figure>
+   
+       <figure>
+         <img src = "javascript logo.jpg" alt = "javascript logo" width = "50px" height = "70px">
+         <figcaption>JAVASCRIPT</figcaption>
+       </figure>
+   
+       <figure>
+         <img src = "python logo.jpg" alt = "python logo" width = "auto" height = "60px">
+         <figcaption>PYTHON</figcaption>
+       </figure>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class = "box">
+  <div class = "edu">
+    <p>Education</p>
+  </div>
+  <div class = "details">
+      <p class = "course">Software Engineering</p>
+      <p class = "school">Bayero University Kano</p>
+      <p class = "region">Kano,Nigeria</p>  
+    <div class = "year">
+      <p>JANUARY   2020 - PRESENT</p>
+     </div>
+          <p class = "course">Science Section</p>
+          <p class ="school">Crescent International School</p>
+          <p class = "region">Kano,Nigeria</p>
+          <div class = "year">
+            <p>SEPTEMBER 2018 - JULY 2019</p>
+          </div>
+  </div>
+</div>
+     
+<div class = "box">
+  <div class = "edu">
+    <p>Experience</p>
+  </div>
+      <div class = "details"> 
+        <p class = "course">eHealth Africa Academy</p>
+        <p class = "school">Second Cohortee</p>
+        <p class = "region">Kano,Nigeria</p>
+        <div class = "year">
+          <p>AUGUST 2020 - OCTOBER 2020</p>
+        </div>
+        <div id = "list">
+          <ul>
+            <li>Learned the fundamentals of web design & development</li>
+            <li>Participated and successfully pass in major challenges</li>
+          </ul>
+        </div>  
+  </div>
+ </div>
+
+ <table class = "content">
+  <tbody>
+    <tr>
+      <td class ="sub-content"><strong>Projects</strong></td>
+      <td>
+        <a href = "https://github.com/sadiqgoni/ehaAcademy" target="_blank">github.com/sadiqgoni/ehaAcademy</a><br>
+        <a href = "https://github.com/sadiqgoni/Countdown-timer-app" target="_blank">github.com/sadiqgoni/Countdown-timer-app</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+ 
+  <footer>
+    <button class="scrollToTopBtn">☝️</button>
+  </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+
+var options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)
+ </script>
+</body>
+</html>
